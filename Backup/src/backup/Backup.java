@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package backup;
+import java.io.IOException;
+import backup.Uteis.BackupPostgres;
 
 /**
  *
@@ -14,8 +16,8 @@ public class Backup {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException, InterruptedException {
+        BackupPostgres.BackupPostgres();
     }
     
 }
