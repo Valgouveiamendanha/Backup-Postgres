@@ -34,7 +34,7 @@ public class BackupPostgres {
             "--no-password",
             "--format", "custom",
             "--blobs",
-            "--verbose", "--file", "D:\\service_station_backup.backup" + DataAtual, "service_station");
+            "--verbose", "--file", "D:\\Backup\\Backup"+ DataAtual +".backup", "service_station");
     try {
         final Map<String, String> env = pb.environment();
         env.put("PGPASSWORD", "");
